@@ -3,7 +3,7 @@ function nameMenuItem(name) {
 }
 
 function createMenuItem() {
-  menuItem = {
+  var menuItem = {
     name: "Delicious French Toast",
     price: 10.99,
     type: "breakfast",
@@ -19,13 +19,33 @@ function addIngredients(name, ingredients) {
   //  }
 }
 
+
+function formatPrice(initialPrice) {
+  return `$${initialPrice}`;
+}
+
+function decreasePrice(price) {
+  var reducedPrice = price * 0.9
+  return `$${reducedPrice})`
+  // HOW TF DO I GET IT TO 2 DECIMALS
+}
+
+function createRecipe(title, ingredients, type) {
+  var recipe = {
+    title: `${title}`,
+    ingredients: `${ingredients}`,
+    type: `${type}`,
+  }
+  return recipe;
+}
+
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
-  // formatPrice,
-  // decreasePrice,
-  // createRecipe
+  formatPrice,
+  decreasePrice,
+  createRecipe
 }
 
 

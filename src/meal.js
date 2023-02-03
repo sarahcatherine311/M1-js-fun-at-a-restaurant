@@ -2,39 +2,58 @@ function nameMenuItem(name) {
   return `Delicious ${name}`
 }
 
-function createMenuItem() {
+
+function createMenuItem(menuItemName, menuItemPrice, menuItemType) {
   var menuItem = {
-    name: "Delicious French Toast",
-    price: 10.99,
-    type: "breakfast",
+    name: menuItemName,
+    price: menuItemPrice,
+    type: menuItemType,
   }
   return menuItem
 }
 
-function addIngredients(name, ingredients) {
-  // for (var i = 0; i < ingredients.length; i++) {
-    // if (`{name} !== ingredients[i]`) {
-      return ingredients.push(name);
-    // }
-  //  }
+
+
+
+function addIngredients(name, array) {
+  return array.push(name);  
 }
+
+
+// var ingredients = ["cheese", "peppers", "onion"]
+
+
+// function addIngredients(name, ingredients) {  
+//   for (var i = 0; i < ingredients.length; i++) {
+//     if (ingredients[i] !== name) {
+//       return ingredients.push(name);
+//     } else {
+//     return ingredients;
+//    } 
+//   }
+// }
+
+
 
 
 function formatPrice(initialPrice) {
   return `$${initialPrice}`;
 }
 
+
+
+
 function decreasePrice(price) {
   var reducedPrice = price * 0.9
-  return `$${reducedPrice})`
+  return `${reducedPrice}`
   // HOW TF DO I GET IT TO 2 DECIMALS
 }
 
-function createRecipe(title, ingredients, type) {
+function createRecipe(recipeTitle, recipeIngredients, recipeType) {
   var recipe = {
-    title: `${title}`,
-    ingredients: `${ingredients}`,
-    type: `${type}`,
+    title: recipeTitle,
+    ingredients: recipeIngredients,
+    type: recipeType,
   }
   return recipe;
 }

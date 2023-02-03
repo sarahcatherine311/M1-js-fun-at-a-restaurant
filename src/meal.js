@@ -15,10 +15,17 @@ function createMenuItem(menuItemName, menuItemPrice, menuItemType) {
 
 
 
-function addIngredients(name, array) {
-  return array.push(name);  
-}
+// function addIngredients(name, array) {
+//   return array.push(name);  
+// }
 
+function addIngredients(name, array) {
+  if (array.includes(name) == false){
+    return array.push(name);
+  } else {
+    return array;
+  } 
+}
 
 // var ingredients = ["cheese", "peppers", "onion"]
 

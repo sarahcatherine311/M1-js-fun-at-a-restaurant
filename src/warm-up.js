@@ -5,7 +5,7 @@
 
 //------------------------- Variables -------------------------//
 
-
+ 
 // Initialize three new variables, "food", "type" and "inStock", and assign values to them with
 // a food's name, type and number of items in stock.
 

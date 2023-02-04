@@ -15,7 +15,7 @@ function addMenuItem (pizzaRestaurant, menuItem) {
   } else if ((menuType === "dinner") && (pizzaRestaurant.menus.dinner.includes(menuItem) == false)) {
     return pizzaRestaurant.menus.dinner.push(menuItem);
   }
-}
+} 
 
 function removeMenuItem (pizzaRestaurant, itemName, menuType) {
   if (pizzaRestaurant.menus[menuType].length === 0) {

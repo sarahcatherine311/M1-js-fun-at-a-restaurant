@@ -3,5 +3,5 @@ class Chef {
     
   }
 }
-
+ 
 module.exports = Chef;
